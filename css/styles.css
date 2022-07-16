@@ -299,7 +299,145 @@ img {
   background-color: var(--wite-background-color);
   margin-right: auto;
 }
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  color: var(--title-text-color);
+  padding: 40px 40px 0px 40px;
+  margin-bottom: 12px;
+}
 
+.modal-form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.lable {
+  display: flex;
+  align-items: center;
+}
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/off.svg);
+  margin-right: 7px;
+}
+.checkbox-input:checked + .checkbox-icon {
+  background-image: url(../images/on.svg);
+}
+
+.form-field label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  margin: 0;
+  height: 40px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--title-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field input:focus ~ .modal-icon,
+.form-field input:hover ~ .modal-icon {
+  fill: var(--accent-color);
+}
+.form-field input:focus,
+.form-field input:hover {
+  border-color: var(--accent-color);
+}
+
+.checkbox-link {
+  line-height: calc(24 / 14);
+  text-decoration-line: underline;
+
+  color: var(--accent-text-color);
+}
+
+.coment {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.submit-btn {
+  bottom: 40px;
+  font-family: Roboto;
+  background-color: var(--accent-text-color);
+  color: var(--wite-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover {
+  background-color: #188ce8;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.checkbox input {
+  margin-right: 8px;
+}
+.coment:placeholder-shown {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
 /* peculiarities */
 .peculiarities-list {
   display: flex;
@@ -762,4 +900,56 @@ img {
 }
 .social-icon {
   fill: var(--wite-background-color);
+}
+.mail-delivery {
+  display: inline-block;
+  width: 570px;
+  margin-left: 93px;
+  margin-top: 12px;
+}
+.mail-delivery-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wite-text-color);
+  margin-bottom: 20px;
+}
+.mail-delivery-btn {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  background-color: var(--accent-text-color);
+  color: var(--wite-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 28px;
+  max-width: 200px;
+  max-height: 50px;
+  border: 0;
+}
+
+.mail-delivery-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 0;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--accent-bacground-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  color: var(--wite-text-color);
+}
+.send-icon {
+  margin-left: 12px;
+}
+.send-menu {
+  display: flex;
 }
