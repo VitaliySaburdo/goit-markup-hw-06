@@ -756,7 +756,7 @@ img {
 
 .portfolio-item {
   width: 370px;
-  /* flex-basis: calc((100%- (30px * 3)) / 4); */
+  /* flex-basis: calc((100% - (30px * 3)) / 4); */
 }
 .portfolio-link {
   display: block;
